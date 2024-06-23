@@ -3,7 +3,7 @@
  <head> 
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Oggy GPT</title> 
+  <title>Venus GPT</title> 
   <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -61,7 +61,7 @@
             align-self: flex-end;
         }
 
-        .oggy-message {
+        .venus-message {
             background-color: #2ecc71;
             color: #fff;
             align-self: flex-start;
@@ -136,9 +136,9 @@
                     hideTypingIndicator();
 
                     const oggyReply = data.answer || 'Sorry, I couldn\'t understand that.';
-                    addMessage('Oggy GPT', oggyReply, 'oggy-message');
+                    addMessage('Venus GPT', venusReply, 'Venus-message');
                     chatHistory.push({ sender: 'User', message: userMessage });
-                    chatHistory.push({ sender: 'Oggy GPT', message: oggyReply });
+                    chatHistory.push({ sender: 'Venus GPT', message: VenusReply });
                 })
                 .catch(error => {
                     // Hide Typing... indicator on error
